@@ -1,0 +1,39 @@
+video_file: MVI_2089.MP4
+# input video file
+output_shape: [1940, 1080]
+# Dimensions of the output image. Here FHD.
+script:
+  - frame: 0
+    # Index of the input frame at which the following attributes will be applied.
+    # All attributes must be set at zero frame.
+    scene_name: preparation
+    # Name of target directory, allows several scenes in singel directory
+    crop_corners: [[698,368], [1578, 385], [690,799], [1564, 817]]
+    # corners in the input to map to the: [ top-left, top-right, bot-left, bot-right] corners of the output image
+    time: 0
+    # Real time from the stopwatch. Will be interpolated and rendered in the output frames.
+    frame_step: 2
+    # Which frames write to the output. For unknown reason every two consecutive frames are nearly the same.
+    operations: ['crop', 'render', 'background_diff']
+    # Which operations to perform.
+
+  - frame: 102
+    # frame attribute must be specified, remaining attributes overwrite previous values.
+    scene_name: [run_1, run_2]
+    # single frame can go into several output directories
+    time: 2
+
+  - frame: 386
+    time: 2170
+
+  - frame: 741
+    time: 4873
+
+# TODO:
+# - extract unmodified frames:
+#   - detect frames with camera movement, use GIMP or other tool to get corners of the aquarium
+#   - extract few more real times
+#   - extract start end end times of individual spot tranports
+# - using these:
+#   - correction of crop_corners at two times when the camera was moved
+#   - separate individual spot propagation into distinguished directories
