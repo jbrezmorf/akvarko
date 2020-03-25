@@ -3,7 +3,7 @@ video_file: MVI_2089.MP4
 output_shape: [1940, 1080]
 # Dimensions of the output image. Here FHD.
 script:
-  - frame: 0
+  - frame: 100
     # Index of the input frame at which the following attributes will be applied.
     # All attributes must be set at zero frame.
     scene_name: preparation
@@ -14,7 +14,7 @@ script:
     # Real time from the stopwatch. Will be interpolated and rendered in the output frames.
     frame_step: 2
     # Which frames write to the output. For unknown reason every two consecutive frames are nearly the same.
-    operations: ['crop', 'render', 'background_diff']
+    operations: ['crop', 'render']
     # Which operations to perform.
 
   - frame: 102
@@ -22,6 +22,13 @@ script:
     scene_name: [run_1, run_2]
     # single frame can go into several output directories
     time: 2
+    
+    # operation 'background_diff' parameters:
+    diff_background_frame: 255
+    # Frame to subtract from the subsequent frames.
+    diff_contrast_scale: 4
+    # Scale the contrast of the difference.
+    operations: ['crop', 'render', 'background_diff']
 
   - frame: 386
     time: 2170

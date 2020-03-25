@@ -16,6 +16,9 @@ def load_script(script_path):
     with open(script_path, "r") as f:
         return yaml.load(f)
 
+class ExcNoFrame(Exception):
+    pass
+
 
 class VideoSource:
     '''
@@ -27,8 +30,13 @@ class VideoSource:
         if not os.path.exists(file_name):
             raise FileExistsError(file_name)
         self.vidcap = cv2.VideoCapture(file_name)
+        # internal frame and time including skipped frames
+        self._i_frame = 0
+        self._time = 0
+        # public i_frame and time of actual frame
         self.i_frame = 0
         self.time = 0
+
         self.last_frame = None
         self.curr_frame = None
         self.time_interval = (0, 0)
@@ -37,15 +45,16 @@ class VideoSource:
 
 
     def update_time(self):
-        p = (self.i_frame - self.frame_interval[0]) / (self.frame_interval[1] - self.frame_interval[0])
-        self.time = (1-p) * self.time_interval[0] + p * self.time_interval[1]
+        p = (self._i_frame - self.frame_interval[0]) / (self.frame_interval[1] - self.frame_interval[0])
+        self._time = (1-p) * self.time_interval[0] + p * self.time_interval[1]
+        return self._time
 
     def set_time(self, end_frame, end_time):
         '''
         Set new interval for the time interpolation.
         '''
-        self.time_interval = (self.time, end_time)
-        self.frame_interval = (self.i_frame, end_frame)
+        self.time_interval = (self._time, end_time)
+        self.frame_interval = (self._i_frame, end_frame)
 
     def frame_diff(self, frame):
         if self.last_frame is None:
@@ -59,9 +68,22 @@ class VideoSource:
         Get next frame, update the frame counter and the time interpolation.
         '''
         success, frame = self.vidcap.read()
-        self.i_frame += 1
+        if not success:
+            raise ExcNoFrame()
+        self._i_frame += 1
         self.update_time()
-        return success, frame
+        return frame
+      
+    def read_and_skip(self, frame_step):
+        self.i_frame = self._i_frame
+        self.time = self.update_time()
+
+        image = self.read()
+        # skip remaining frames from the step
+        for i in range(frame_step - 1):
+            self.read()
+        return image
+
 
     def read_dedup(self):
         '''
@@ -71,12 +93,10 @@ class VideoSource:
         '''
         skip = 0
         while True:
-            success, frame = self.read()
+            frame = self.read()
             skip += 1
-            if not success:
-                return False, None
             diff = self.frame_diff(frame)
-            print(self.i_frame, diff)
+            print(self._i_frame, diff)
             if diff > self.frame_diff_limit:
                 self.last_frame = frame
                 print("skipping: ", skip)
@@ -106,45 +126,66 @@ def process_script(script):
             if end_time is not None:
                 end_frame = script_list[i_block]['frame']
                 vidcap.set_time(end_frame, end_time)
-        if not process_frame(vidcap, attributes):
+        try:
+            process_frame(vidcap, attributes)
+        except ExcNoFrame:
             return
 
 
 def process_frame(video, attributes):
+    # read the frame, index, time
+    image = video.read_and_skip(attributes.get('frame_step', 1))
+    annotate = "{:04d} : {:010}s".format(video.i_frame, int(video.time))
+
     # target dir is given by the scene name
-    output_dirs = attributes.get('scene_name', 'default_scene')
+    output_dirs = attributes.get('scene_name', [])    
     if type(output_dirs) is str:
         output_dirs = [output_dirs]
     for dir in output_dirs:
         os.makedirs(dir, exist_ok=True)
-
-    dims = tuple(attributes['output_shape'])
-    crop_corners = np.float32(attributes['crop_corners'])
-    output_corners = np.float32([[0, 0], [dims[0], 0], [0, dims[1]], [dims[0], dims[1]]])
-    deform_matrix = cv2.getPerspectiveTransform(crop_corners, output_corners)
+    scene_overview = '|'.join([d.rjust(20) for d in output_dirs])
+    print(annotate, ' -> ', scene_overview)
+    if len(output_dirs) == 0:
+        return True
 
     operations = attributes.get('operations', [])
 
-    success, image = video.read()
-    if not success:
-        return False
-    i_frame = video.i_frame
-    time = video.time
-
-    # skip remaining frames from the step
-    for i in range(attributes.get('frame_step', 1) - 1):
-        success, image = video.read()
-    annotate = "{:04d} : {:010}s".format(i_frame, int(time))
-    print(annotate)
 
     if 'crop' in operations:
+        # compute perspective transform
+        dims = tuple(attributes.get('output_shape', [1940, 1080]))
+        crop_corners = np.float32(attributes.get('crop_corners', None))
+        if crop_corners is None:
+            X, Y = image.shape
+            crop_corners = [[0, 0], [X, 0], [0, Y], [X, Y]]
+        output_corners = np.float32([[0, 0], [dims[0], 0], [0, dims[1]], [dims[0], dims[1]]])
+        deform_matrix = cv2.getPerspectiveTransform(crop_corners, output_corners)
+
         image = cv2.warpPerspective(image, deform_matrix, dims)
+
+    if 'background_diff' in operations:
+        # extract difference frame
+        diff_frame = attributes.get('diff_background_frame', None)
+        diff_contrast_scale = attributes.get('diff_contrast_scale', 1.0)
+        if diff_frame == video.i_frame:
+            attributes['_diff_image'] = image.copy()
+        diff_image = attributes.get('_diff_image', None)
+        if diff_image is not None:
+            image[:, :, 0] = 0
+            image[:, :, 2] = 0
+            #image[:, :, 1] = np.maximum(diff_image[:, :, 1] - image[:, :, 1], 0.0)
+            overflow_limit = 32
+            image[:, :, 1] =  np.maximum(diff_contrast_scale * (diff_image[:, :, 1] - image[:, :, 1]) + overflow_limit,
+                                         overflow_limit) - overflow_limit
+            image[:, :, 1] =  image[:, :, 1]
+            # keep just the green component
+
     if 'render' in operations:
         image = cv2.putText(image, annotate, (dims[0] - 400, 30),
                        cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
 
     for dir in output_dirs:
-        out_path = os.path.join(dir, "frame_{:04d}.jpg".format(i_frame))
+        out_path = os.path.join(dir, "frame_{:04d}.jpg".format(video.i_frame))
         cv2.imwrite(out_path, image, [int(cv2.IMWRITE_JPEG_QUALITY), 90])     # save frame as JPEG file
         # out_path = os.path.join(dir, "frame_{:04d}.png".format(i_frame))
         # cv2.imwrite(out_path, image)  # save frame as PNG file
