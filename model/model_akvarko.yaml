@@ -1,0 +1,139 @@
+flow123d_version: 3.0.0_dev
+problem: !Coupling_Sequential
+  description: "Model Akvarka"
+  mesh:
+    mesh_file: mesh/mesh_05_full.msh
+    #mesh_file: mesh/mesh_5.msh
+    #mesh_file: mesh/mesh_35x8.msh
+    regions:
+        #- !From_Elements
+          #name: .point_inflow
+          # mesh/mesh_35x8.msh
+          # element_list: [77]
+          
+          # mesh_15
+          # element_list: [67]
+
+          # mesh_15
+          #element_list: [64]
+        - !Union
+          name: .point_inflow
+          regions:
+            - .topleft
+        - !Union
+          name: .fixed_boundary
+          regions:
+            - .left
+            - .right
+            - .bottom        
+       
+  flow_equation: !Flow_Darcy_MH
+    nonlinear_solver:
+      tolerance: 1e-10
+      linear_solver: !Petsc
+        a_tol: 1.0e-12
+        r_tol: 1.0e-12
+    n_schurs: 2
+    input_fields:
+      - region: BULK
+        #conductivity: 5e-2      # oprava mereni a extrapolace na 3mm kulicky
+        # conductivity: 5e-2      # oprava mereni a extrapolace na 3mm kulicky
+        
+        #conductivity: 1.7e-3      # 0.5mm kulicky
+        #conductivity: 14.6e-3      # 2mm kulicky
+        #conductivity: 5.5e-3      # 1mm kulicky
+        conductivity: 2e-3       # 1-2mm kulicky
+        cross_section: 0.08
+        
+      - region: .topright
+        bc_type: seepage
+        bc_pressure: 0
+        bc_flux: 0
+        #bc_flux: 0.0025
+      #- region: .topleft
+        #bc_type: seepage
+        #bc_pressure: 0
+        #bc_flux: 0
+      - region: .point_inflow
+        bc_type: total_flux
+        bc_pressure: 0
+        #bc_flux: 5e-3            # oprava 2mm, nasyceno, odpovidajici tok: 0.5l/min, breakthrough time 600, tj. 10min
+        #bc_flux: 2.5e-1            # oprava extrapol. 3mm, tesne nasyceno, odpovidajici tok: 25l/min, breakthrough time 24s, tj. 0.5min
+        
+        # bc_flux: 1e-2            # 0.5mm kulicky, tesne nasyceno, odpovidajici tok: 0.9l/min, breakthrough time 600s
+        # mesh_05
+        #bc_flux: 1.2e-2             # 2mm kulicky, tesne nasyceno, odpovidajici tok: 0.9l/min, breakthrough time 600s
+        #bc_flux: 0.29e-2             # 1mm kulicky, tesne nasyceno, odpovidajici tok: 0.64l/min, breakthrough time 400s
+        # mesh 10
+        #bc_flux: 0.29e-2             # 1mm kulicky, tesne nasyceno, odpovidajici tok: 0.9l/min, breakthrough time 600s
+        
+
+        #akvarko 850 x 100 mm (delka x rozdil hladin), top element size: 0,0196
+        #bc_flux: 0.7e-2             # 1mm kulicky, tesne nasyceno, odpovidajici tok: 0.9l/min, breakthrough time 600s
+        bc_flux: 1e-2             #  = 0,0005 / 0.01 / 0.08 /60; plocha 0.01*0.08, reealny prutok 0.5l/min;
+        
+        #akvarko 850 x 150 mm (delka x rozdil hladin), top el. size: 0.02 
+        #bc_flux: 1.5e-2             # 1mm kulicky, tesne nasyceno, odpovidajici tok: 1.44l/min, breakthrough time 220s
+        
+        #akvarko 357 x 80 mm, top element size: 0,0096
+        #bc_flux: 0.5e-2            # 0.5mm kulicky, tesne nasyceno, odpovidajici tok: 0.23l/min, namereno: 0.66l/min, 
+        
+    output:
+      fields:
+        - piezo_head_p0
+        - pressure_p0
+        - pressure_p1
+        - velocity_p0
+    balance:
+      cumulative: true
+    output_stream:
+      file: ./akvarko_flow.pvd
+      format: !vtk
+        variant: ascii
+
+  solute_equation: !Coupling_OperatorSplitting
+    #transport: !Solute_AdvectionDiffusion_DG
+    transport: !Solute_Advection_FV
+      input_fields:
+        - region: ALL
+          porosity: 0.1
+        - region: bulk
+          init_conc: 0
+        - region: repository  
+          init_conc: 0
+
+        - region: repository
+          time: 0
+          sources_density: 1
+        - region: repository
+          time: 5
+          sources_density: 0
+        - region: repository
+          time: 600
+          sources_density: 1
+        - region: repository
+          time: 605
+          sources_density: 0
+        - region: repository
+          time: 1200
+          sources_density: 1
+        - region: repository
+          time: 1205
+          sources_density: 0
+            
+    output_stream:
+      file: ./akvarko_trans.pvd
+      format: !vtk
+        variant: ascii
+      times:
+        - step: 100  # [s]
+            
+      precision: 10
+    substances:
+      - X
+    balance:
+      cumulative: true
+    time:
+      end_time: 1800 # [s]
+      #end_time: 500 # 24*3600
+      #end_time: 86400 # 24*3600
