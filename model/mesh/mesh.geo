@@ -11,9 +11,12 @@ z2 = 0.38;
 
 
 // top boundary separation point
-left_fraction = 0.01;
-zmid = left_fraction * z1 + (1-left_fraction) * z2;
-xmid = left_fraction * base;
+left_fraction_1 = 0.1;
+left_fraction_2 = 0.11;
+zmid1 = left_fraction_1 * z1 + (1-left_fraction_1) * z2;
+xmid1 = left_fraction_1 * base;
+zmid2 = left_fraction_2 * z1 + (1-left_fraction_2) * z2;
+xmid2 = left_fraction_2 * base;
 
 // position of repository
 xrepo = 0.21;
@@ -26,16 +29,18 @@ hrepo = 0.02;
 Point(1) = {0, 0, 0, mesh};
 Point(2) = {base, 0, 0, mesh};
 Point(3) = {base, 0, z1, mesh};
-Point(4) = {xmid, 0, zmid, mesh};
+Point(4) = {xmid2, 0, zmid2, mesh};
+Point(6) = {xmid1, 0, zmid1, mesh};
 Point(5) = {0, 0, z2, mesh};
 
 Line(1) = {1,2};
 Line(2) = {2,3};
 Line(3) = {3,4};
-Line(4) = {4,5};
+Line(4) = {4,6};
+Line(6) = {6,5};
 Line(5) = {5,1};
 
-Line Loop(1) = {1,2,3,4,5};
+Line Loop(1) = {1,2,3,4,6,5};
 
 
 
@@ -61,8 +66,8 @@ Plane Surface(101) = {101};
 Physical Line(".bottom") = {1};
 Physical Line(".left") = {5};
 Physical Line(".right") = {2};
-Physical Line(".topright") = {3};
-Physical Line(".topleft") = {4};
+Physical Line(".top") = {3, 6};
+Physical Line(".top_source") = {4};
 
 Physical Surface("bulk") = {1};
 Physical Surface("repository") = {101};
@@ -74,7 +79,7 @@ Mesh 2;
 //Geometry.Tolerance = 1e-9;
 //Coherence Mesh;
 
-Save "mesh2.msh";
-Exit;
+//Save "mesh2.msh";
+//Exit;
 
 

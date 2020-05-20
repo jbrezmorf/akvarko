@@ -19,7 +19,7 @@ problem: !Coupling_Sequential
         - !Union
           name: .point_inflow
           regions:
-            - .topleft
+            - .top_source
         - !Union
           name: .fixed_boundary
           regions:
@@ -45,7 +45,7 @@ problem: !Coupling_Sequential
         conductivity: 2e-3       # 1-2mm kulicky
         cross_section: 0.08
         
-      - region: .topright
+      - region: .top
         bc_type: seepage
         bc_pressure: 0
         bc_flux: 0
