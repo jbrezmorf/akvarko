@@ -2,7 +2,7 @@ flow123d_version: 3.0.0_dev
 problem: !Coupling_Sequential
   description: "Model Akvarka"
   mesh:
-    mesh_file: mesh/mesh_05_full.msh
+    mesh_file: mesh/mesh_010.msh
     #mesh_file: mesh/mesh_5.msh
     #mesh_file: mesh/mesh_35x8.msh
     regions:
@@ -36,13 +36,23 @@ problem: !Coupling_Sequential
     n_schurs: 2
     input_fields:
       - region: BULK
-        #conductivity: 5e-2      # oprava mereni a extrapolace na 3mm kulicky
+        #conductivity: 5e-2       # oprava mereni a extrapolace na 3mm kulicky
         # conductivity: 5e-2      # oprava mereni a extrapolace na 3mm kulicky
         
-        #conductivity: 1.7e-3      # 0.5mm kulicky
-        #conductivity: 14.6e-3      # 2mm kulicky
-        #conductivity: 5.5e-3      # 1mm kulicky
-        conductivity: 2e-3       # 1-2mm kulicky
+        #conductivity: 1.7e-3     # 0.5mm kulicky
+        #conductivity: 14.6e-3    # 2mm kulicky
+        #conductivity: 5.5e-3     # 1mm kulicky
+        
+        #conductivity: 1e-4        # 1-2mm kulicky; nasyceno
+        #conductivity: 2e-4        # 1-2mm kulicky; nasyceno
+        #conductivity:  4e-4        # 1-2mm kulicky; nasyceno plne vpravo
+        #conductivity:  8e-4        # 1-2mm kulicky; castecne nenasyceno vpravo, ale malo
+        #conductivity:  1.6e-3      # 1-2mm kulicky; castecne nenasyceno vpravo, vzdalenost zhruba odpovida, tvar malo
+        #conductivity:  3.2e-3      # 1-2mm kulicky; castecne nenasyceno vpravo, vzdalenost zhruba odpovida, tvar stale spise malo
+        #conductivity:  4e-3         # 1-2mm kulicky; asi idealni, nasyceni dosahuje povrchu jen u vtoku, poloha vytoku sedi; v transportu stale pomale
+        conductivity:  4.5e-3         # 1-2mm kulicky; vypada stejne jako pro 4e-3
+        #conductivity:  5.5e-3       # 1-2mm kulicky; moc nenasyceno, ale je videt misto vtoku
+        #conductivity:  6.4e-3       # 1-2mm kulicky; moc nenasyceno po celem povrchu
         cross_section: 0.08
         
       - region: .top
@@ -70,7 +80,8 @@ problem: !Coupling_Sequential
 
         #akvarko 850 x 100 mm (delka x rozdil hladin), top element size: 0,0196
         #bc_flux: 0.7e-2             # 1mm kulicky, tesne nasyceno, odpovidajici tok: 0.9l/min, breakthrough time 600s
-        bc_flux: 1e-2             #  = 0,0005 / 0.01 / 0.08 /60; plocha 0.01*0.08, reealny prutok 0.5l/min;
+        #bc_flux: 1e-2             #  = 0,0005 / 0.01 / 0.08 /60; plocha 0.01*0.08, reealny prutok 0.5l/min;
+        bc_flux: 1.3e-2           #  = 0,0005 / plocha /60 [m/s]; plocha=(0.01*0.77)*0.08 [m2]; mereny prutok 0.5l/min;
         
         #akvarko 850 x 150 mm (delka x rozdil hladin), top el. size: 0.02 
         #bc_flux: 1.5e-2             # 1mm kulicky, tesne nasyceno, odpovidajici tok: 1.44l/min, breakthrough time 220s
@@ -81,8 +92,7 @@ problem: !Coupling_Sequential
     output:
       fields:
         - piezo_head_p0
-        - pressure_p0
-        - pressure_p1
+        - pressure_p0        
         - velocity_p0
     balance:
       cumulative: true
@@ -95,8 +105,14 @@ problem: !Coupling_Sequential
     #transport: !Solute_AdvectionDiffusion_DG
     transport: !Solute_Advection_FV
       input_fields:
-        - region: ALL
-          porosity: 0.1
+        - region: ALL          
+          # pro vodivost 4e-3
+          # ================
+          #porosity: 0.3    # realisticka hodnota, odchod prvniho peeku okolo času 400s = 6.6min
+          # pro vodivost 4.5e-3
+          # ================
+          porosity: 0.2    # realisticka hodnota, odchod prvniho peeku okolo času 400s = 6.6min; mereno okolo 260s
+          
         - region: bulk
           init_conc: 0
         - region: repository  
@@ -108,25 +124,25 @@ problem: !Coupling_Sequential
         - region: repository
           time: 5
           sources_density: 0
-        - region: repository
-          time: 600
-          sources_density: 1
-        - region: repository
-          time: 605
-          sources_density: 0
-        - region: repository
-          time: 1200
-          sources_density: 1
-        - region: repository
-          time: 1205
-          sources_density: 0
+        #- region: repository
+          #time: 600
+          #sources_density: 1
+        #- region: repository
+          #time: 605
+          #sources_density: 0
+        #- region: repository
+          #time: 1200
+          #sources_density: 1
+        #- region: repository
+          #time: 1205
+          #sources_density: 0
             
     output_stream:
       file: ./akvarko_trans.pvd
       format: !vtk
         variant: ascii
       times:
-        - step: 100  # [s]
+        - step: 20  # [s]
             
       precision: 10
     substances:
@@ -134,6 +150,6 @@ problem: !Coupling_Sequential
     balance:
       cumulative: true
     time:
-      end_time: 1800 # [s]
+      end_time: 600 # [s]
       #end_time: 500 # 24*3600
       #end_time: 86400 # 24*3600

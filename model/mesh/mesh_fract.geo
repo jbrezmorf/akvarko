@@ -10,6 +10,14 @@ z1 = 0.27;
 z2 = 0.38;
 
 // top boundary separation point
+left_fraction_1 = 0.1;
+left_fraction_2 = 0.11;
+zmid1 = left_fraction_1 * z1 + (1-left_fraction_1) * z2;
+xmid1 = left_fraction_1 * base;
+zmid2 = left_fraction_2 * z1 + (1-left_fraction_2) * z2;
+xmid2 = left_fraction_2 * base;
+
+
 left_fraction = 0.01;
 zmid = left_fraction * z1 + (1-left_fraction) * z2;
 xmid = left_fraction * base;
@@ -66,23 +74,26 @@ Plane Surface(101) = {101};
 Point(1) = {0, 0, 0, mesh};
 Point(2) = {base, 0, 0, mesh};
 Point(3) = {base, 0, z1, mesh};
-Point(4) = {xmid, 0, zmid, mesh};
+Point(4) = {xmid2, 0, zmid2, mesh};
+Point(6) = {xmid1, 0, zmid1, mesh};
 Point(5) = {0, 0, z2, mesh};
 
+
 // bulk with fracture endpoint 201 inside
-//Line(1) = {201,2};
+
 Line(2) = {2,3}; // left vertical
 Line(3) = {3,202}; // top left, source
 Line(4) = {202,4}; // top right
+Line(8) = {4,6};
 Line(5) = {1,2}; // bottom line
 
 //Line(5) = {1,201};
-Line(6) = {4,5}; // top right from frac
+Line(6) = {6,5}; // top right from frac
 Line(7) = {5,1};   // right vertical
 
 
 // bulk loop
-Line Loop(1) = {2,3,-201,201,4,6,7,5};
+Line Loop(1) = {2,3,-201,201,4,8, 6,7,5};
 Plane Surface(1) = {1, 101};
 
 
@@ -105,9 +116,11 @@ Physical Line(".left") = {7};
 Physical Line(".right") = {2};
 Physical Line(".topright") = {3};
 Physical Line(".topleft") = {4,6};
+Physical Line(".top_source") = {8};
 
 Physical Surface("bulk") = {1};
 Physical Surface("repository") = {101};
+
 
 
 Mesh 2;
