@@ -1,0 +1,1962 @@
+column_names: [ flux,  flux_in,  flux_out,  mass,  source,  source_in,  source_out,  flux_increment,  source_increment,  flux_cumulative,  source_cumulative,  error ]
+data:
+  - time: 0
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 0
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 0
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0, 7.2e-05, 7.2e-05, 0, 0, 0, 0, 0, 0 ]
+  - time: 0
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 0
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 0
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 0
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 0
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 0
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 0
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0, 7.2e-05, 7.2e-05, 0, 0, 0, 0, 0, 0 ]
+  - time: 10
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 10
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 3.58881e-14, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 10
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 10
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 10
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 10
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 10
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 10
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 10
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 10
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0.00036, 0, 0.00036, 2.17806e-14 ]
+  - time: 20
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 20
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.07664e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 20
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 20
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 20
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 20
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 20
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 20
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 20
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 20
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 6.53419e-14 ]
+  - time: 30
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 30
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.79441e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 30
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 30
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 30
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 30
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 30
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 30
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 30
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 30
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.08903e-13 ]
+  - time: 40
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 40
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.51217e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 40
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 40
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 40
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 40
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 40
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 40
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 40
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 40
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.52465e-13 ]
+  - time: 50
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 50
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 3.22993e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 50
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 50
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 50
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 50
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 50
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 50
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 50
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 50
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.96026e-13 ]
+  - time: 60
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 60
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 3.94769e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 60
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 60
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 60
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 60
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 60
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 60
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 60
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 60
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 2.39587e-13 ]
+  - time: 70
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 70
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 4.66545e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 70
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 70
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 70
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 70
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 70
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 70
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 70
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 70
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 2.83149e-13 ]
+  - time: 80
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 80
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 5.38322e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 80
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 80
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 80
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 80
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 80
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 80
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 80
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 80
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 3.2671e-13 ]
+  - time: 90
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 90
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 6.10098e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 90
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 90
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 90
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 90
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 90
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 90
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 90
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 90
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 3.70271e-13 ]
+  - time: 100
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 100
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 6.81874e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 100
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 100
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 100
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 100
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 100
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 100
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 100
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 100
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 4.13833e-13 ]
+  - time: 110
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 110
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 7.5365e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 110
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 110
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 110
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 110
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 110
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 110
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 110
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 110
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 4.57394e-13 ]
+  - time: 120
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 120
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 8.25427e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 120
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 120
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 120
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 120
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 120
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 120
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 120
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 120
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 5.00955e-13 ]
+  - time: 130
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 130
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 8.97203e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 130
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 130
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 130
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 130
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 130
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 130
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 130
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 130
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 5.44517e-13 ]
+  - time: 140
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 140
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 9.68979e-13, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 140
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 140
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 140
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 140
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 140
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 140
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 140
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 140
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 5.88078e-13 ]
+  - time: 150
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 150
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.04076e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 150
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 150
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 150
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 150
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 150
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 150
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 150
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 150
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 6.31639e-13 ]
+  - time: 160
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 160
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.11253e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 160
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 160
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 160
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 160
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 160
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 160
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 160
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 160
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 6.75201e-13 ]
+  - time: 170
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 170
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.18431e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 170
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 170
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 170
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 170
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 170
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 170
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 170
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 170
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 7.18762e-13 ]
+  - time: 180
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 180
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.25608e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 180
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 180
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 180
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 180
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 180
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 180
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 180
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 180
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 7.62323e-13 ]
+  - time: 190
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 190
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.32786e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 190
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 190
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 190
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 190
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 190
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 190
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 190
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 190
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 8.05885e-13 ]
+  - time: 200
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 200
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.39964e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 200
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 200
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 200
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 200
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 200
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 200
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 200
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 200
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 8.49446e-13 ]
+  - time: 210
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 210
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.47141e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 210
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 210
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 210
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 210
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 210
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 210
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 210
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 210
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 8.93007e-13 ]
+  - time: 220
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 220
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.54319e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 220
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 220
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 220
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 220
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 220
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 220
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 220
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 220
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 9.36569e-13 ]
+  - time: 230
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 230
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.61497e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 230
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 230
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 230
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 230
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 230
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 230
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 230
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 230
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 9.8013e-13 ]
+  - time: 240
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 240
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.68674e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 240
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 240
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 240
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 240
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 240
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 240
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 240
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 240
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.02369e-12 ]
+  - time: 250
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 250
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.75852e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 250
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 250
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 250
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 250
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 250
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 250
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 250
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 250
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.06725e-12 ]
+  - time: 260
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 260
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.83029e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 260
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 260
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 260
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 260
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 260
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 260
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 260
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 260
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.11081e-12 ]
+  - time: 270
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 270
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.90207e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 270
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 270
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 270
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 270
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 270
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 270
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 270
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 270
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.15438e-12 ]
+  - time: 280
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 280
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 1.97385e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 280
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 280
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 280
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 280
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 280
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 280
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 280
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 280
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.19794e-12 ]
+  - time: 290
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 290
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.04562e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 290
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 290
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 290
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 290
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 290
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 290
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 290
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 290
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.2415e-12 ]
+  - time: 300
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 300
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.1174e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 300
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 300
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 300
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 300
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 300
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 300
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 300
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 300
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.28506e-12 ]
+  - time: 310
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 310
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.18917e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 310
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 310
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 310
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 310
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 310
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 310
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 310
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 310
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.32862e-12 ]
+  - time: 320
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 320
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.26095e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 320
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 320
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 320
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 320
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 320
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 320
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 320
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 320
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.37218e-12 ]
+  - time: 330
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 330
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.33273e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 330
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 330
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 330
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 330
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 330
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 330
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 330
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 330
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.41574e-12 ]
+  - time: 340
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 340
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.4045e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 340
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 340
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 340
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 340
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 340
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 340
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 340
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 340
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.4593e-12 ]
+  - time: 350
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 350
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.47628e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 350
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 350
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 350
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 350
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 350
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 350
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 350
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 350
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.50287e-12 ]
+  - time: 360
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 360
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.54806e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 360
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 360
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 360
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 360
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 360
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 360
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 360
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 360
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.54643e-12 ]
+  - time: 370
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 370
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.61983e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 370
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 370
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 370
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 370
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 370
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 370
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 370
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 370
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.58999e-12 ]
+  - time: 380
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 380
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.69161e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 380
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 380
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 380
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 380
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 380
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 380
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 380
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 380
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.63355e-12 ]
+  - time: 390
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 390
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.76338e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 390
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 390
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 390
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 390
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 390
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 390
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 390
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 390
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.67711e-12 ]
+  - time: 400
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 400
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.83516e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 400
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 400
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 400
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 400
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 400
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 400
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 400
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 400
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.72067e-12 ]
+  - time: 410
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 410
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.90694e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 410
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 410
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 410
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 410
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 410
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 410
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 410
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 410
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.76423e-12 ]
+  - time: 420
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 420
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 2.97871e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 420
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 420
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 420
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 420
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 420
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 420
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 420
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 420
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.8078e-12 ]
+  - time: 430
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 430
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 3.05049e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 430
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 430
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 430
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 430
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 430
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 430
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 430
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 430
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.85136e-12 ]
+  - time: 440
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 440
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 3.12227e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 440
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 440
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 440
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 440
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 440
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 440
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 440
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 440
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.89492e-12 ]
+  - time: 450
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 450
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 3.19404e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 450
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 450
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 450
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 450
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 450
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 450
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 450
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 450
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.93848e-12 ]
+  - time: 460
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 460
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 3.26582e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 460
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 460
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 460
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 460
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 460
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 460
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 460
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 460
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 1.98204e-12 ]
+  - time: 470
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 470
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 3.33759e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 470
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 470
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 470
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 470
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 470
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 470
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 470
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 470
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 2.0256e-12 ]
+  - time: 480
+    region: fracture
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 480
+    region: bulk
+    quantity: X
+    data: [ 0, 0, 0, 3.40937e-12, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 480
+    region: repository
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 480
+    region: .bottom
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 480
+    region: .left
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 480
+    region: .right
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 480
+    region: .topright
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 480
+    region: .topleft
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 480
+    region: .IMPLICIT_BOUNDARY
+    quantity: X
+    data: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+  - time: 480
+    region: ALL
+    quantity: X
+    data: [ 0, 0, 0, 0.00036, 0, 0, 0, 0, 0, 0, 0.00036, 2.06916e-12 ]
