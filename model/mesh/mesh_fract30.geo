@@ -21,27 +21,32 @@ Point(3) = {base, 0, z2, mesh};
 Point(4) = {xmid, 0, zmid, mesh};
 Point(5) = {0, 0, z1, mesh};
 
+//point inflow
+Point(8) = {0.743, 0, 0.4011, mesh};
+Point(9) = {0.723, 0, 0.3976, mesh};
+//Line(7) = {8,9};
+
 Line(1) = {1,2};
 Line(2) = {2,3};
-Line(3) = {3,4};
-Line(4) = {4,5};
-Line(5) = {5,1};
+Line(3) = {3,8};
+Line(4) = {8,9};
+Line(5) = {9,4};
+Line(6) = {4,5};
+Line(7) = {5,1};
 
-Line Loop(1) = {1,2,3,4,5};
-
-//point inflow
-//Point(7) = {xmid2, 0, zmid2, mesh};
-//Point(8) = {xmid1, 0, zmid1, mesh};
-//Line(8) = {7,8};
+Line Loop(1) = {1,2,3,4,5,6,7};
 
 //fract
-
 Point(6) = {0.1, 0, 0.23, mesh};
 Point(7) = {0.21, 0, 0.05, mesh};
+Line(8) = {6,7};
 
-Line(6) = {6,7};
 
-//
+
+
+
+
+//repozitory
 Point(101) = {xrepo, 0, zrepo, mesh};
 Point(102) = {xrepo+lrepo, 0, zrepo, mesh};
 Point(103) = {xrepo+lrepo, 0, zrepo+hrepo, mesh};
@@ -54,21 +59,26 @@ Line(104) = {104,101};
 
 Line Loop(101) = {101,102,103,104};
 Line Loop(102) = {6, -6};
+//Line Loop(103) = {7, -7};
 
 
 // bulk
 Plane Surface(1) = {1, 101, 102};
 // repository
 Plane Surface(101) = {101};
+//inflow
+//Plane Surface(4) = {103};
 
 
 Physical Line(".bottom") = {1};
-Physical Line(".left") = {5};
-Physical Line(".right") = {2};
-Physical Line(".topright") = {3};
-Physical Line(".topleft") = {4};
+Physical Line(".right") = {7};
+Physical Line(".left") = {2};
+Physical Line(".topleft1") = {3};
+Physical Line(".topleft2") = {5};
+Physical Line(".topright") = {6};
 
-Physical Line("fracture") = {6};
+Physical Line("fracture") = {8};
+Physical Line("inflow") = {4};
 
 Physical Surface("bulk") = {1};
 Physical Surface("repository") = {101};
@@ -81,4 +91,7 @@ Mesh 2;
 //Coherence Mesh;
 
 //Save "mesh_fract30.msh";
-//Exit;
+//Exit;//+
+Show "*";
+//+
+Show "*";

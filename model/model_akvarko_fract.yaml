@@ -12,7 +12,8 @@ problem: !Coupling_Sequential
           name: .point_inflow
           regions:
             ##- .top_source
-            - repository
+            - inflow
+            #- .topleft1
         - !Union
           name: .fixed_boundary
           regions:
@@ -20,8 +21,10 @@ problem: !Coupling_Sequential
             - .right
             - .bottom
             - .topright
-            - .topleft
-            - fracture        
+            #- .topleft
+            - fracture 
+            #- inflow
+       
        
   flow_equation: !Flow_Darcy_MH
     nonlinear_solver:
@@ -32,7 +35,6 @@ problem: !Coupling_Sequential
     n_schurs: 2
     input_fields:
       - region: BULK
-        
         conductivity:   5e-3         # 3mm kuličky
         cross_section: 0.08
         
@@ -40,20 +42,19 @@ problem: !Coupling_Sequential
         bc_type: seepage
         bc_pressure: 0
         bc_flux: 0
+    
 
       - region: .point_inflow
         bc_type: total_flux
         bc_pressure: 0
-        bc_flux: 4.48e-2           #  = 0,0005 / plocha /60 [m/s]; plocha=(0.01*0.77)*0.08 [m2]; mereny prutok 0.5l/min;
+        bc_flux: 4.48e-1           #  = 0,0005 / plocha /60 [m/s]; plocha=(0.01*0.77)*0.08 [m2]; mereny prutok 0.5l/min;
+         
         
       - region: fracture
         conductivity: 0.667        #Vodivost pukliny - neměnit, spočítáno správně
         cross_section: 5.88e-4     # 0,012 - tloušťka, 0,049 - šířka     
         
-      - region:.topleft
-      bc_type: seepage
-      bc_pressure: 0
-      bc_flux: 0        
+             
 
     output:
       fields:
@@ -87,7 +88,7 @@ problem: !Coupling_Sequential
           time: 0
           sources_density: 1
         - region: repository
-          time: 5
+          time: 10
           sources_density: 0
 
             
@@ -96,14 +97,14 @@ problem: !Coupling_Sequential
       format: !vtk
         variant: ascii
       times:
-        - step: 10  # [s]
+        - step: 5  # [s]
             
-      precision: 5
+     # precision: 5
     substances:
       - X
     balance:
       cumulative: true
     time:
-      end_time: 480 # [s]
+      end_time: 200 # [s]
       #end_time: 500 # 24*3600
       #end_time: 86400 # 24*3600
